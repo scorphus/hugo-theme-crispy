@@ -1,8 +1,9 @@
 <div itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <h5>A propos de l'auteur</h5>
+  <h5>About the author</h5>
   <section>
-    <p><a href="http://profiles.google.com/thibault.normand?rel=author" itemprop="name" rel="author">Thibault Normand</a> est un dévéloppeur et un bloggeur enthousiaste, curieux de toutes nouvelles technologies liées à la sécurité, l'architecture, et le
-      web. <a href="http://zenithar.org/" rel="me">Plus d'infos...</a>
-    </p>
+    <p><a href="{{ .Site.Params.authorLink }}"
+    itemprop="name" rel="author">{{ .Site.Params.author }}</a>
+    {{ .Site.Params.authorAbout }}
+    <a href="{{ .Site.Params.readMoreLink }}" rel="me">Read more...</a></p>
   </section>
 </div>
