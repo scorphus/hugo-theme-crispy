@@ -171,6 +171,16 @@ header #logo img {
 header h6 {
 	margin-top:0.5em;
 }
+header h6 a {
+	list-style: none;
+	display: inline;
+}
+header h6 a:after {
+	content: " \2022";
+}
+header h6 a:last-child:after {
+	content: none;
+}
 /* Posts */
 article span.post-stamp {
 	color:#888;
