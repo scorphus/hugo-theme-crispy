@@ -30,6 +30,7 @@ header p {
 	margin-top: 1.2em;
 }
 #content {
+	padding-top: 0em;
 	display: block;
 	width: 100%;
 }
@@ -155,14 +156,15 @@ header #logo img {
 	font-size: 0.7em;
 	margin-top: -0.7em;
 	margin-bottom: 1.5em;
+	height: 28px;
+	line-height: 28px;
 }
 #follow-icons a {
+	margin-right: 0.7em;
 	color: #ccc;
 }
 #follow-icons span {
 	vertical-align:top;
-	margin-left:-0.15em;
-	margin-right:-0.15em;
 }
 #follow-icons span .fa-stack-1x {
 	font-size:1.05em;
@@ -190,7 +192,7 @@ h1.post-title {
 	margin-bottom: 0.6em;
 }
 h3.post-title {
-	margin-top:0.4em;
+	margin-top:0em;
 	padding-bottom:0.9em;
 	border-bottom: 1px solid #eee;
 	font-size: 1.2em;
@@ -253,14 +255,21 @@ footer a:hover {
 		padding:0;
 		background-color: #FDFFFC;
 	}
+	p, hr, h4, h5, h6 {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	h3.post-title {
+		margin-bottom: 0.5em;
+		padding-bottom: 0.7em;
+	}
 	header {
 		border-right: none;
-		border-bottom: 1px #eee solid;
 		position:relative;
 		height:auto;
 		width:auto;
 		text-align:center;
-		padding-bottom:1em;
+		padding:0;
 	}
 	header #logo img {
 		padding-top: 1.2em;
@@ -275,12 +284,19 @@ footer a:hover {
 	header h6 a {
 		color: #FDFFFC;
 	}
+	header, #follow-icons {
+		margin-bottom:0.5em;
+	}
+	#follow-icons a {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
 	header p {
 		margin: 1em 1em 0 1em;
 	}
 	#content {
 		margin-left: 0;
-		padding: 2em 2em 1em 2em;
+		padding: 0.5em 1.5em 0.1em 1.5em;
 		width: auto;
 	}
 	footer {
