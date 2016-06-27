@@ -279,6 +279,25 @@ footer a:hover {
 		padding: 0 1.5em 1.2em 1.5em;
 	}
 	ul, ol {
-		margin-left: 2em; 
+		margin-left: 2em;
 	}
+}
+
+.crispy-fa-facebook:before {
+  content: "\f230";
+}
+.crispy-fa-twitter:before {
+  content: "\f099";
+}
+.crispy-fa-linkedin:before {
+  content: "\f0e1";
+}
+.crispy-fa-github:before {
+  content: "\f09b";
+}
+.crispy-fa-plus:before {
+  content: "\f0d5";
+}
+.crispy-fa-rss:before {
+  content: "\f09e";
 }
