@@ -80,8 +80,13 @@
                 <a id="logo" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" /></a>
             {{ end }}
             <h1><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></h1>
-            <p>{{.Description}}</p>
 
             {{ partial "follow.html" . }}
             {{ partial "navigation.html" . }}
+
+            {{ if .IsNode }}
+                <p>{{ .Site.Params.welcome }}</p>
+            {{ else }}
+                <p>{{.Description}}</p>
+            {{ end }}
         </header>

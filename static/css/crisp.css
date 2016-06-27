@@ -26,6 +26,9 @@ header {
 	height:100%;
 	width:13.5em;
 }
+header p {
+	margin-top: 1.2em;
+}
 #content {
 	display: block;
 	width: 100%;
@@ -251,6 +254,9 @@ footer a:hover {
 	header #logo img {
 		padding-top: 1.2em;
 		margin-bottom: -1em;
+	}
+	header p {
+		margin: 1em 1em 0 1em;
 	}
 	#content {
 		margin-left: 0;
