@@ -33,7 +33,7 @@
     {{ else }}
         <meta name="description" content="{{ .Site.Params.description }}" />
     {{ end }}
-        
+
         <meta name="p:domain_verify" content="fc173d84e3a4de948ed4bda2908afd3e"/>
         <meta name="HandheldFriendly" content="True" />
         <meta name="MobileOptimized" content="320" />
@@ -43,7 +43,7 @@
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->  
+        <![endif]-->
 
     {{ if ne .URL "/" }}
         <link href="{{ .Site.BaseURL }}index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
@@ -56,7 +56,7 @@
 
     {{ if .IsPage }}
     <script type="application/ld+json">
-    { 
+    {
         "@context": "http://schema.org",
         "@type": "Article",
         "headline": "{{ .Title }}",
@@ -70,7 +70,7 @@
     }
     </script>
     {{ end }}
-    
+
     {{ partial "criticalpath.html" . }}
     {{ partial "webfont.html" . }}
     </head>
