@@ -248,6 +248,10 @@ footer a:hover {
 		text-align:center;
 		padding-bottom:1em;
 	}
+	header #logo img {
+		padding-top: 1.2em;
+		margin-bottom: -1em;
+	}
 	#content {
 		margin-left: 0;
 		padding: 2em 2em 1em 2em;
