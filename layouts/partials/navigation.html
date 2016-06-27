@@ -1,1 +1,5 @@
-<h6><a href="http://zenithar.org">About</a></h6>
+<h6>
+    {{ range where .Site.Pages "Type" "page" }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    {{ end }}
+</h6>
