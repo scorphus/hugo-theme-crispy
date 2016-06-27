@@ -87,7 +87,7 @@ img, iframe {
 a {
 	font-weight:700;
 	text-decoration:none;
-	color: #5cc265; /* Change Link Color */
+	color: #24890d; /* Change Link Color */
 }
 a:hover {
 	text-decoration:underline;
@@ -241,6 +241,7 @@ footer a:hover {
 @media only screen and (max-width: 800px) {
 	body {
 		padding:0;
+		background-color: #FDFFFC;
 	}
 	header {
 		border-right: none;
@@ -254,6 +255,15 @@ footer a:hover {
 	header #logo img {
 		padding-top: 1.2em;
 		margin-bottom: -1em;
+	}
+	header h6 {
+		color: #FDFFFC;
+		background-color: #24890d;
+		line-height: 1.65em;
+		height: 1.72em;
+	}
+	header h6 a {
+		color: #FDFFFC;
 	}
 	header p {
 		margin: 1em 1em 0 1em;
