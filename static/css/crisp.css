@@ -119,7 +119,6 @@ code {
 pre {
 	font-size: 0.8em;
 	line-height: 2em;
-	background: #eee;
 	padding: 1em;
 	word-break: break-all;
 	word-wrap: break-word;
@@ -317,6 +316,10 @@ footer a:hover {
 	ul, ol {
 		margin-left: 2em;
 	}
+}
+
+div.highlight {
+	border-radius: 5px;
 }
 
 .crispy-fa-facebook:before {
