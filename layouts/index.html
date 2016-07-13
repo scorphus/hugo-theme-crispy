@@ -3,7 +3,7 @@
 {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
 
 {{ range $index, $page := $paginator.Pages }}
-    {{ .Render "li" }}
+  {{ .Render "li" }}
 {{ end }}
 
 {{ partial "pagination.html" $paginator }}

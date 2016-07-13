@@ -105,7 +105,7 @@ blockquote {
 	font-size: 1.3em;
 }
 hr{
- 	border: 0;
+	border: 0;
 	height: 1px;
 	background: #eee;
 }
@@ -320,20 +320,20 @@ footer a:hover {
 }
 
 .crispy-fa-facebook:before {
-  content: "\f230";
+	content: "\f230";
 }
 .crispy-fa-twitter:before {
-  content: "\f099";
+	content: "\f099";
 }
 .crispy-fa-linkedin:before {
-  content: "\f0e1";
+	content: "\f0e1";
 }
 .crispy-fa-github:before {
-  content: "\f09b";
+	content: "\f09b";
 }
 .crispy-fa-plus:before {
-  content: "\f0d5";
+	content: "\f0d5";
 }
 .crispy-fa-rss:before {
-  content: "\f09e";
+	content: "\f09e";
 }
