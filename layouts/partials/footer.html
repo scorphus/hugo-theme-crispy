@@ -7,18 +7,14 @@
 
   asyncLoader([
     "//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css",
-    "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js",
-    "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"
+    "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
   ],{
     callback:function(){
       asyncLoader([
         "{{ .Site.BaseURL }}css/rrssb.css",
         "{{ .Site.BaseURL }}js/gist.min.js",
-        "{{ .Site.BaseURL }}js/rrssb.min.js",
-        "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css"
-      ], { callback:function() {
-          hljs.initHighlighting();
-      }});
+        "{{ .Site.BaseURL }}js/rrssb.min.js"
+      ]);
     }
   });
 </script>
