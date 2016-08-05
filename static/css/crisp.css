@@ -49,6 +49,10 @@ p, hr, h4, h5, h6 {
 	margin-top: 0.9em;
 	margin-bottom: 0.9em;
 }
+time {
+	font-style: italic;
+	color: #888;
+}
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Bree Serif", serif;
