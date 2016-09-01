@@ -104,9 +104,10 @@ strong {
 	font-weight: 700;
 }
 blockquote {
-	border-left: 0.4em solid #eee;
-	padding-left: 1.2em;
-	font-size: 1.3em;
+	border-left: 0.5em solid #eee;
+	padding-left: 0.5em;
+	margin-left: 0.5em;
+	font-size: 0.95em;
 }
 hr{
 	border: 0;
