@@ -7,13 +7,13 @@
 
   asyncLoader([
     "//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css",
-    "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    {{ if not .IsNode }}"//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"{{ end }}
   ],{
     callback:function(){
-      asyncLoader([
+      {{ if not .IsNode }}asyncLoader([
         "{{ .Site.BaseURL }}css/rrssb.css",
         "{{ .Site.BaseURL }}js/rrssb.min.js"
-      ]);
+      ]);{{ end }}
     }
   });
 </script>
