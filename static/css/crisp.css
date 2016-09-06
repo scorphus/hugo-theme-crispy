@@ -119,8 +119,12 @@ ul, ol {
 	margin-left: 3em;
 }
 code {
-	font-size:1.4em;
+	font-size: 1.3em;
 	background: #eee;
+	font-weight: lighter;
+	padding: 0 0.2em;
+	border-radius: 0.2em;
+	border: #ddd 1px solid;
 }
 pre {
 	font-size: 0.9em;
