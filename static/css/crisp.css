@@ -8,18 +8,18 @@ html, body {
 	line-height: 1.65em;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
-	color:#444;
+	color:#3e483c; /* crispy#444444 */
 }
 html {
 	height: 100%;
 }
 body {
-	background-color: #fdfffc;
+	background-color: #fdfffc; /* crispy#fdfffc */
 	padding: 2em 2.5em 1em 17.7em;
 }
 /* Blocks */
 header {
-	border-right: 1px #eee solid;
+	border-right: 1px solid #e4eee2; /* crispy#eeeeee */
 	padding: 2em;
 	position:fixed;
 	top: 0;
@@ -39,10 +39,10 @@ footer {
 	padding: 1em 0em 2.5em 0em;
 	font-size:0.8em;
 	line-height: 1.5em;
-	color: #888;
+	color: #818b7e; /* crispy#888888 */
 }
 article {
-	border-bottom: 0.1em #eee solid;
+	border-bottom: 0.1em solid #e4eee2; /* crispy#eeeeee */
 	padding-bottom: 1.7em;
 	max-width: 56em;
 }
@@ -52,7 +52,7 @@ p, hr, h4, h5, h6 {
 }
 time {
 	font-style: italic;
-	color: #888;
+	color: #818b7e; /* crispy#888888 */
 }
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -93,7 +93,7 @@ img, iframe {
 a {
 	font-weight:700;
 	text-decoration:none;
-	color: #24890d; /* Change Link Color */
+	color: #24890d; /* crispy#24890d */
 }
 a:hover {
 	text-decoration:underline;
@@ -105,7 +105,7 @@ strong {
 	font-weight: 700;
 }
 blockquote {
-	border-left: 0.5em solid #eee;
+	border-left: 0.5em solid #e4eee2; /* crispy#eeeeee */
 	padding-left: 0.5em;
 	margin-left: 0.5em;
 	font-size: 0.95em;
@@ -113,18 +113,18 @@ blockquote {
 hr{
 	border: 0;
 	height: 1px;
-	background: #eee;
+	background: #e4eee2; /* crispy#eeeeee */
 }
 ul, ol {
 	margin-left: 3em;
 }
 code {
 	font-size: 1.3em;
-	background: #eee;
+	background: #e4eee2; /* crispy#eeeeee */
 	font-weight: lighter;
 	padding: 0 0.2em;
 	border-radius: 0.2em;
-	border: #ddd 1px solid;
+	border: 1px solid #d4ded1; /* crispy#dddddd */
 }
 pre {
 	font-size: 0.9em;
@@ -150,7 +150,7 @@ header h1 {
 	margin-bottom:0.6em;
 }
 header h1 a {
-	color:#444;
+	color:#3e483c; /* crispy#444444 */
 }
 header h1 a:hover {
 	text-decoration:none;
@@ -172,7 +172,7 @@ header #logo img {
 }
 #follow-icons a {
 	margin-right: 0.7em;
-	color: #ccc;
+	color: #c3cdc1; /* crispy#cccccc */
 }
 #follow-icons span {
 	vertical-align:top;
@@ -196,7 +196,7 @@ header h6 a:last-child:after {
 }
 /* Posts */
 article span.post-stamp {
-	color:#888;
+	color:#818b7e; /* crispy#888888 */
 }
 h1.post-title {
 	margin-top: 0;
@@ -205,19 +205,19 @@ h1.post-title {
 h3.post-title {
 	margin-top:0em;
 	padding-bottom:0.9em;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #e4eee2; /* crispy#eeeeee */
 	font-size: 1.2em;
-	color: #444;
+	color: #3e483c; /* crispy#444444 */
 }
 .post-title .feature-star {
 	font-size: 0.9em;
 }
 .separator, .taglist, .feature-star {
-	color: #ccc;
+	color: #c3cdc1; /* crispy#cccccc */
 }
 .taglist a {
-	background-color:#ccc;
-	color:#fff;
+	background-color:#c3cdc1; /* crispy#cccccc */
+	color:#fdfffc; /* crispy#fdfffc */
 	display: inline-block;
 	line-height: 1.5em;
 	padding:0.3em 0.6em 0.3em 0.6em;
@@ -233,13 +233,13 @@ h3.post-title {
 }
 #social-bar {
 	margin-top:1.5em;
-	background-color:#eee;
+	background-color:#e4eee2; /* crispy#eeeeee */
 	padding:0.5em;
 }
 #comments {
 	margin-top: 0.15em;
 	padding-bottom: 0.2em;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #e4eee2; /* crispy#eeeeee */
 }
 /* Footer */
 .pagination {
@@ -247,11 +247,11 @@ h3.post-title {
 }
 footer a {
 	font-weight:300;
-	color:#888;
+	color:#818b7e; /* crispy#888888 */
 	text-decoration: underline;
 }
 footer a:hover {
-	color:#444;
+	color:#3e483c; /* crispy#444444 */
 	text-decoration: none;
 }
 /* Large Screens */
@@ -264,7 +264,7 @@ footer a:hover {
 @media only screen and (max-width: 800px) {
 	body {
 		padding:0;
-		background-color: #fdfffc;
+		background-color: #fdfffc; /* crispy#fdfffc */
 	}
 	p, hr, h4, h5, h6 {
 		margin-top: 0.5em;
@@ -287,13 +287,13 @@ footer a:hover {
 		margin-bottom: -1em;
 	}
 	header h6 {
-		color: #fdfffc;
-		background-color: #24890d;
+		color: #fdfffc; /* crispy#fdfffc */
+		background-color: #24890d; /* crispy#24890d */
 		line-height: 1.65em;
 		height: 1.72em;
 	}
 	header h6 a {
-		color: #fdfffc;
+		color: #fdfffc; /* crispy#fdfffc */
 	}
 	header, #follow-icons {
 		margin-bottom:0.5em;
@@ -331,8 +331,7 @@ footer a:hover {
 }
 
 div.highlight {
-	border-radius: 3px;
-	background-color: #eff2ef !important;
+	border-radius: 2px;
 }
 
 .crispy-fa-facebook:before {
