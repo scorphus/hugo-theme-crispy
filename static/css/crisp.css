@@ -164,7 +164,6 @@ header #logo img {
 	border: none;
 }
 #follow-icons {
-	font-size: 0.7em;
 	margin-top: -0.7em;
 	margin-bottom: 1.5em;
 	height: 28px;
@@ -334,21 +333,21 @@ div.highlight {
 	border-radius: 2px;
 }
 
-.crispy-fa-facebook:before {
-	content: "\f230";
+.icon-facebook2:before {
+	content: "\ea91";
 }
-.crispy-fa-twitter:before {
-	content: "\f099";
+.icon-twitter:before {
+	content: "\ea96";
 }
-.crispy-fa-linkedin:before {
-	content: "\f0e1";
+.icon-linkedin:before {
+	content: "\eac9";
 }
-.crispy-fa-github:before {
-	content: "\f09b";
+.icon-github:before {
+	content: "\eab0";
 }
-.crispy-fa-plus:before {
-	content: "\f0d5";
+.icon-google-plus3:before {
+	content: "\ea8d";
 }
-.crispy-fa-rss:before {
-	content: "\f09e";
+.icon-rss:before {
+	content: "\ea9b";
 }
