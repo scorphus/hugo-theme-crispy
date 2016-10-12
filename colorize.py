@@ -25,8 +25,8 @@ def get_hex_str_for(groups, hue, lum, sat):
         s = -0.025 * (255.0 / l)
         l *= 0.975
     if groups[3] == '#24890d':
-        l = lum or l
-        s = sat or s
+        l = lum if lum is not None else l
+        s = sat if sat is not None else s
     return rgb_to_hex(colorsys.hls_to_rgb(h, l, s))
 
 
