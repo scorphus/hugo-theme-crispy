@@ -230,9 +230,10 @@ h3.post-title {
 	-webkit-border-radius: 0.25em;
 }
 #social-bar {
-	margin-top:1.5em;
-	background-color:#e2eee6; /* crispy#eeeeee */
-	padding:0.5em;
+	margin:1em 0;
+}
+#social-bar .rrssb-buttons li a {
+	filter: opacity(75%) grayscale(75%) saturate(75%);
 }
 #comments {
 	margin-top: 0.15em;
