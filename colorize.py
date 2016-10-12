@@ -56,14 +56,15 @@ def main():
                 hue = float(eval(color))
             except:
                 hue = None
-        try:
-            lum = float(sys.argv[2])
-        except:
-            lum = None
-        try:
-            sat = float(sys.argv[3])
-        except:
-            sat = None
+        lum = sat = None
+    try:
+        lum = float(sys.argv[2])
+    except:
+        pass
+    try:
+        sat = float(sys.argv[3])
+    except:
+        pass
     change_color(hue, lum, sat)
 
 
