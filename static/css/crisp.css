@@ -129,12 +129,6 @@ code {
 pre {
 	font-size: 0.9em;
 	padding: 1em;
-	/*word-break: break-all;*/
-	/*word-wrap: break-word;*/
-	/*white-space: pre;*/
-	/*white-space: -moz-pre-wrap;*/
-	/*white-space: pre-wrap;*/
-	/*white-space: pre\9;*/
 	overflow: auto;
 	word-wrap: normal;
 	white-space: pre;
