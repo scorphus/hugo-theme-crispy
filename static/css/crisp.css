@@ -158,7 +158,7 @@ header #logo img {
 	border: none;
 }
 #crisico {
-	margin-top: -0.7em;
+	margin-top: -0.6em;
 	margin-bottom: 1.5em;
 	height: 28px;
 	line-height: 28px;
@@ -280,8 +280,7 @@ footer a:hover {
 		padding:0;
 	}
 	header #logo img {
-		padding-top: 1.2em;
-		margin-bottom: -1em;
+		margin: 1.2em 0 -1em;
 	}
 	header h6 {
 		color: #fcfffd; /* crispy#fdfffc */
