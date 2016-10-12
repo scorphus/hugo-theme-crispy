@@ -179,16 +179,17 @@ header #logo img {
 	line-height:1.9em;
 }
 header h6 {
+	color: #009f2f; /* crispy#24890d */
 	margin-top:0.5em;
 }
 header h6 a {
 	list-style: none;
 	display: inline;
 }
-header h6 a:after {
-	content: " \2022";
+header h6 i:after {
+	content: "\2022";
 }
-header h6 a:last-child:after {
+header h6 i:last-child:after {
 	content: none;
 }
 /* Posts */

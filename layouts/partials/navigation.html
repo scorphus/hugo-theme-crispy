@@ -1,5 +1,6 @@
 <h6>
   {{ range where .Site.Pages "Type" "page" }}
     <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <i></i>
   {{ end }}
 </h6>
