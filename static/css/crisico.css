@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'icomoon';
+  font-family: 'crisico';
   src:
-    url('fonts/icomoon.woff2?akf21g') format('woff2'),
-    url('fonts/icomoon.ttf?akf21g') format('truetype'),
-    url('fonts/icomoon.woff?akf21g') format('woff'),
-    url('fonts/icomoon.svg?akf21g#icomoon') format('svg');
+    url('fonts/crisico.woff2') format('woff2'),
+    url('fonts/crisico.ttf') format('truetype'),
+    url('fonts/crisico.woff') format('woff');
+  /* url('fonts/crisico.svg?akf21g#crisico') format('svg') */
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="crisico-"], [class*=" crisico-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'crisico' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -24,22 +24,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-facebook2:before {
+.crisico-facebook:before {
   content: "\ea91";
 }
-.icon-twitter:before {
+.crisico-twitter:before {
   content: "\ea96";
 }
-.icon-linkedin:before {
+.crisico-linkedin:before {
   content: "\eac9";
 }
-.icon-github:before {
+.crisico-github:before {
   content: "\eab0";
 }
-.icon-google-plus3:before {
+.crisico-plus:before {
   content: "\ea8d";
 }
-.icon-rss:before {
+.crisico-rss:before {
   content: "\ea9b";
 }
 

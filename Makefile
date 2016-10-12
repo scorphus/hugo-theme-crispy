@@ -1,8 +1,8 @@
-all: criticalpath icons
+all: criticalpath crisico
 
 criticalpath: layouts/partials/criticalpath.html
 
-icons: static/css/icons.min.css
+crisico: static/css/crisico.min.css
 
 setup:
 	@go get -u -v github.com/tdewolff/minify/cmd/minify
@@ -10,8 +10,8 @@ setup:
 static/css/crisp.min.css: static/css/crisp.css
 	@minify static/css/crisp.css -o static/css/crisp.min.css -v
 
-static/css/icons.min.css: static/css/icons.css
-	@minify static/css/icons.css -o static/css/icons.min.css -v
+static/css/crisico.min.css: static/css/crisico.css
+	@minify static/css/crisico.css -o static/css/crisico.min.css -v
 
 layouts/partials/criticalpath.html: static/css/crisp.min.css
 	@echo '<style>' > layouts/partials/criticalpath.html

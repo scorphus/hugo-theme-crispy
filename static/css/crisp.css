@@ -157,13 +157,13 @@ header #logo img {
 	-webkit-border-radius: 4.5em;
 	border: none;
 }
-#follow-icons {
+#crisico {
 	margin-top: -0.7em;
 	margin-bottom: 1.5em;
 	height: 28px;
 	line-height: 28px;
 }
-#follow-icons a {
+#crisico a {
 	margin-right: 0.7em;
 	color: #c1cdc4; /* crispy#cccccc */
 	-webkit-animation: fadein 1.359s linear; /* Safari 4+ */
@@ -171,10 +171,10 @@ header #logo img {
 		-o-animation:      fadein 1.359s linear; /* Opera 12+ */
 		animation:         fadein 1.359s linear; /* IE 10+, Fx 29+ */
 }
-#follow-icons span {
+#crisico span {
 	vertical-align:top;
 }
-#follow-icons span .fa-stack-1x {
+#crisico span .fa-stack-1x {
 	font-size:1.05em;
 	line-height:1.9em;
 }
@@ -292,10 +292,10 @@ footer a:hover {
 	header h6 a {
 		color: #fcfffd; /* crispy#fdfffc */
 	}
-	header, #follow-icons {
+	header, #crisico {
 		margin-bottom:0.5em;
 	}
-	#follow-icons a {
+	#crisico a {
 		margin-left: 1em;
 		margin-right: 1em;
 	}
