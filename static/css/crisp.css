@@ -332,22 +332,3 @@ footer a:hover {
 div.highlight {
 	border-radius: 2px;
 }
-
-.icon-facebook2:before {
-	content: "\ea91";
-}
-.icon-twitter:before {
-	content: "\ea96";
-}
-.icon-linkedin:before {
-	content: "\eac9";
-}
-.icon-github:before {
-	content: "\eab0";
-}
-.icon-google-plus3:before {
-	content: "\ea8d";
-}
-.icon-rss:before {
-	content: "\ea9b";
-}

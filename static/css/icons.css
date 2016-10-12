@@ -23,22 +23,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-google-plus3:before {
-  content: "\ea8d";
-}
 .icon-facebook2:before {
   content: "\ea91";
 }
 .icon-twitter:before {
   content: "\ea96";
 }
-.icon-rss:before {
-  content: "\ea9b";
+.icon-linkedin:before {
+  content: "\eac9";
 }
 .icon-github:before {
   content: "\eab0";
 }
-.icon-linkedin:before {
-  content: "\eac9";
+.icon-google-plus3:before {
+  content: "\ea8d";
+}
+.icon-rss:before {
+  content: "\ea9b";
 }
 
