@@ -166,10 +166,6 @@ header #logo img {
 #crisico a {
 	margin-right: 0.7em;
 	color: #c1cdc4; /* crispy#cccccc */
-	-webkit-animation: fadein 1.359s linear; /* Safari 4+ */
-		-moz-animation:    fadein 1.359s linear; /* Fx 5+ */
-		-o-animation:      fadein 1.359s linear; /* Opera 12+ */
-		animation:         fadein 1.359s linear; /* IE 10+, Fx 29+ */
 }
 #crisico span {
 	vertical-align:top;
