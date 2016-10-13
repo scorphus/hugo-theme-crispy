@@ -8,7 +8,7 @@ html, body {
 	line-height: 1.65em;
 	font-family: "Helvetica", "Arial", sans-serif;
 	font-weight: 300;
-	color:#3c4840; /* crispy#444444 */
+	color:#4d5950; /* crispy#555555 */
 }
 html {
 	height: 100%;
@@ -144,7 +144,7 @@ header h1 {
 	margin-bottom:0.6em;
 }
 header h1 a {
-	color:#3c4840; /* crispy#444444 */
+	color:#4d5950; /* crispy#555555 */
 }
 header h1 a:hover {
 	text-decoration:none;
@@ -201,7 +201,7 @@ h3.post-title {
 	padding-bottom:0.9em;
 	border-bottom: 1px solid #e2eee6; /* crispy#eeeeee */
 	font-size: 1.2em;
-	color: #3c4840; /* crispy#444444 */
+	color: #4d5950; /* crispy#555555 */
 }
 .post-title .feature-star {
 	font-size: 0.9em;
@@ -249,7 +249,7 @@ footer a {
 	text-decoration: underline;
 }
 footer a:hover {
-	color:#3c4840; /* crispy#444444 */
+	color:#4d5950; /* crispy#555555 */
 	text-decoration: none;
 }
 /* Large Screens */
