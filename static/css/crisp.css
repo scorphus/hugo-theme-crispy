@@ -6,7 +6,7 @@
 html, body {
 	font-size: 1em;
 	line-height: 1.65em;
-	font-family: "Arial", "Helvetica", sans-serif;
+	font-family: "Helvetica", "Arial", sans-serif;
 	font-weight: 300;
 	color:#3c4840; /* crispy#444444 */
 }
@@ -91,7 +91,7 @@ img, iframe {
 	max-width: 100%;
 }
 a {
-	font-weight:700;
+	font-weight:400;
 	text-decoration:none;
 	color: #009f2f; /* crispy#24890d */
 }
@@ -221,7 +221,7 @@ h3.post-title {
 	padding:0.2em 0.4em 0.1em;
 	vertical-align:20%;
 	font-size:0.5em;
-	font-family: "Arial", "Helvetica", sans-serif;
+	font-family: "Helvetica", "Arial", sans-serif;
 	font-weight: 700 !important;
 	text-transform:uppercase;
 	letter-spacing:0.05em;
