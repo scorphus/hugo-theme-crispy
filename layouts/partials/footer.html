@@ -11,7 +11,11 @@
       {{ if not .IsNode }}asyncLoader([
         "{{ .Site.BaseURL }}css/rrssb.css",
         "{{ .Site.BaseURL }}js/rrssb.min.js"
-      ]);{{ end }}
+      ], {
+        callback: function() {
+          asyncLoader(["{{ .Site.BaseURL }}css/share.min.css"])
+        }
+      });{{ end }}
     }
   });
 </script>

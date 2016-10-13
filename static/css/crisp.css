@@ -226,10 +226,14 @@ h3.post-title {
 	-webkit-border-radius: 0.25em;
 }
 #social-bar {
+	opacity:0;
+	height:36px;
 	margin:1em 0;
+	background-color:#f0fdf4; /* crispy#fdfdfd */
+	padding:0.2em 0.5em;
 }
 #social-bar .rrssb-buttons li a {
-	filter: opacity(75%) grayscale(75%) saturate(75%);
+	filter: opacity(80%) grayscale(70%) saturate(80%);
 }
 #comments {
 	margin-top: 0.15em;

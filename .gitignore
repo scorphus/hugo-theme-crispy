@@ -1,3 +1,2 @@
-static/css/crisico.min.css
-static/css/crisp.min.css
+static/css/*.min.css
 layouts/partials/criticalpath.html
