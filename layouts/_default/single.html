@@ -3,7 +3,7 @@
 <main id="content">
 
 <article id="{{ .Slug }}" class="{{ .Type }}">
-  <h1 class="post-title">{{ .Title }}</h1>
+  {{ if not .Params.omit_title }}<h1 class="post-title">{{ .Title }}</h1>{{ end }}
   <div class="post-stamp">
     {{ if eq .Type "post" }}
     <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
@@ -21,7 +21,7 @@
   </div>
   {{ .Content }}
   {{ partial "share.html" . }}
-  {{ partial "author.html" . }}
+  {{ if not .Params.omit_about }}{{ partial "author.html" . }}{{ end }}
   {{ partial "comments.html" . }}
 </article>
 
