@@ -7,10 +7,12 @@
       {{ .Date.Format "2 Jan 2006" }}
     </time>
     <span class="taglist">
-    {{if .Params.tags }}
-      &middot;
-      {{ range $index, $tag := .Params.tags }}
-        <a href="{{ $baseurl }}tags/{{ $tag | urlize }}/">{{ $tag }}</a>
+    {{ if not .Site.Params.omitTags }}
+      {{ if .Params.tags }}
+        &middot;
+        {{ range $index, $tag := .Params.tags }}
+          <a href="{{ $baseurl }}tags/{{ $tag | urlize }}/">{{ $tag }}</a>
+        {{ end }}
       {{ end }}
     {{ end }}
     </span>
