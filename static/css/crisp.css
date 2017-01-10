@@ -103,8 +103,8 @@ a:hover {
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	font-weight:400 !important;
 }
-strong {
-	font-weight: 700;
+strong, strong a {
+	font-weight:700;
 }
 blockquote {
 	border-left: 0.5em solid #e2eee6; /* crispy#eeeeee */
