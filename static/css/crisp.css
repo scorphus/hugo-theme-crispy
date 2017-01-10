@@ -6,7 +6,7 @@
 html, body {
 	font-size: 1em;
 	line-height: 1.65em;
-	font-family: "Helvetica", "Arial", sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	color:#4d5950; /* crispy#555555 */
 	-webkit-font-smoothing: antialiased;
@@ -219,7 +219,7 @@ h3.post-title {
 	padding:0.2em 0.4em 0.1em;
 	vertical-align:20%;
 	font-size:0.5em;
-	font-family: "Helvetica", "Arial", sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-weight: 700 !important;
 	text-transform:uppercase;
 	letter-spacing:0.05em;
