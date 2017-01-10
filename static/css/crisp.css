@@ -121,16 +121,18 @@ ul, ol {
 	margin-left: 3em;
 }
 code {
-	font-size: 1.3em;
+	font-size: 1.05em;
+	line-height: 0.8em;
 	background: #e2eee6; /* crispy#eeeeee */
 	font-weight: lighter;
 	padding: 0 0.2em;
+	margin: -4px 0 4px;
 	border-radius: 0.2em;
 	border: 1px solid #d1ded5; /* crispy#dddddd */
 }
 pre {
 	font-size: 0.9em;
-	padding: 1em;
+	padding: 0.6em;
 	overflow: auto;
 	word-wrap: normal;
 	white-space: pre;
