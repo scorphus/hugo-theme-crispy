@@ -235,10 +235,10 @@ h3.post-title span, h3.post-title time {
 }
 #social-bar {
 	opacity:0;
-	height:36px;
 	margin:1em 0;
-	background-color:#f0fdf4; /* crispy#fdfdfd */
-	padding:0.2em 0.5em;
+}
+#social-bar .rrssb-buttons {
+	height:36px;
 }
 #social-bar .rrssb-buttons li a {
 	filter: opacity(80%) grayscale(70%) saturate(80%);
