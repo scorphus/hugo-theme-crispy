@@ -1,4 +1,8 @@
-# Crisp
+# Crispy
+
+A theme based on **Crisp** – see below. Updated documentation to follow soon.
+
+## Crisp
 
 A minimalist, responsive, and open-source theme for [Hugo](http://gohugo.io/) by [Kathy Qian](http://kathyqian.com).
 
