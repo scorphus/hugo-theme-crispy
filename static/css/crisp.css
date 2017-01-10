@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400 !important;
 }
 h1 {
-	font-size: 2.5em;
+	font-size: 2.0em;
 	line-height: 1.1em;
 	margin-top: 0.6em;
 	margin-bottom: 0.6em;
@@ -76,8 +76,8 @@ h2 {
 h3 {
 	font-size:1.4em;
 	line-height: 1.3em;
-	margin-top: 0.8em;
-	margin-bottom: 0.8em;
+	margin-top: 1.0em;
+	margin-bottom: 0.5em;
 }
 h4 {
 	font-size:1.3em;
@@ -196,14 +196,18 @@ article span.post-stamp {
 }
 h1.post-title {
 	margin-top: 0;
-	margin-bottom: 0.6em;
+	margin-bottom: 0.4em;
 }
 h3.post-title {
 	margin-top:0em;
 	padding-bottom:0.9em;
 	border-bottom: 1px solid #e2eee6; /* crispy#eeeeee */
-	font-size: 1.2em;
+	font-size: 1.15em;
 	color: #4d5950; /* crispy#555555 */
+}
+h3.post-title span, h3.post-title time {
+	font-size: 0.7em;
+	vertical-align: top;
 }
 .post-title .feature-star {
 	font-size: 0.9em;
