@@ -1,5 +1,8 @@
 all: criticalpath crisico share
 
+clean:
+	@find . -iname \*.min.css -delete -print
+
 criticalpath: layouts/partials/criticalpath.html
 
 crisico: static/css/crisico.min.css
