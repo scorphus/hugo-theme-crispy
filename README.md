@@ -2,6 +2,12 @@
 
 A theme based on **Crisp** – see below. Updated documentation to follow soon.
 
+## Dependencies
+
+### [minify](https://github.com/tdewolff/minify/tree/master/cmd/minify)
+
+`make setup`
+
 ## Crisp
 
 A minimalist, responsive, and open-source theme for [Hugo](http://gohugo.io/) by [Kathy Qian](http://kathyqian.com).
