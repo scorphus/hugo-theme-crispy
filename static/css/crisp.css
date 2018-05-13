@@ -5,7 +5,6 @@
 /* Basic Typography */
 html, body {
 	font-size: 1em;
-	line-height: 1.65em;
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	color:#4d5950; /* crispy#555555 */
@@ -49,6 +48,7 @@ article {
 	max-width: 56em;
 }
 p, hr, h4, h5, h6 {
+	line-height: 1.65em;
 	margin-top: 0.9em;
 	margin-bottom: 0.9em;
 }
@@ -120,7 +120,7 @@ hr{
 ul, ol {
 	margin-left: 3em;
 }
-code {
+p code {
 	font-size: 1.05em;
 	line-height: 0.8em;
 	background: #e2eee6; /* crispy#eeeeee */
@@ -131,14 +131,20 @@ code {
 	border: 1px solid #d1ded5; /* crispy#dddddd */
 }
 pre {
-	font-size: 0.9em;
-	padding: 0.6em;
 	overflow: auto;
 	word-wrap: normal;
 	white-space: pre;
 }
+div.highlight td:nth-child(2) {
+	width: 100%;
+}
+div.highlight>div, div.highlight>pre {
+	background: #e2eee6; /* crispy#eeeeee */
+	padding: 0.1em;
+	border-radius: 0.2em;
+}
 input {
-	font-size:1em;
+	font-size: 1em;
 	padding: 0.3em;
 }
 /* Sidebar */
