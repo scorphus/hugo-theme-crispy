@@ -23,6 +23,12 @@
     }
   });
 </script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<script
+  type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+  {{ if .Params.mjx_align }}
+  onload="MathJax.Hub.Config({displayAlign: '{{ .Params.mjx_align }}'});"
+  {{ end }}
+></script>
 {{ template "_internal/google_analytics.html" . }}
 </body></html>
