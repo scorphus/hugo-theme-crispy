@@ -92,6 +92,12 @@ h6 {
 img, iframe {
 	max-width: 100%;
 }
+img[src$='#center'] {
+	display: block;
+	margin: 1.0rem auto;
+	max-width: 100%;
+	height: auto;
+}
 a {
 	font-weight:400;
 	text-decoration:none;
