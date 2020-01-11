@@ -1,0 +1,71 @@
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+
+{{ if (.Get "fill") }}
+  {{ .Scratch.Set "freakingGoTpl" ($src.Fill (.Get "fill")) }}
+{{ else }}
+  {{ .Scratch.Set "freakingGoTpl" $src }}
+{{ end }}
+
+{{ $src := .Scratch.Get "freakingGoTpl" }}
+
+{{ $tinyWidth := default "500x" }}
+{{ $smallWidth := default "800x" }}
+{{ $mediumWidth := default "1200x" }}
+{{ $largeWidth := default "1500x" }}
+{{ $xlargeWidth := default "3000x" }}
+
+{{ .Scratch.Set "tiny" ($src.Resize $tinyWidth) }}
+{{ .Scratch.Set "small" ($src.Resize $smallWidth) }}
+{{ .Scratch.Set "medium" ($src.Resize $mediumWidth) }}
+{{ .Scratch.Set "large" ($src.Resize $largeWidth) }}
+{{ .Scratch.Set "large" ($src.Resize $xlargeWidth) }}
+
+{{ $tiny := .Scratch.Get "tiny" }}
+{{ $small := .Scratch.Get "small" }}
+{{ $medium := .Scratch.Get "medium" }}
+{{ $large := .Scratch.Get "large" }}
+{{ $xlarge := .Scratch.Get "xlarge" }}
+
+<img
+  {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}
+    2sizes="(min-width: 35em) 1200px, 100vw"
+  {{ end }}
+  srcset='
+  {{ if ge $src.Width "500" }}
+    {{ with $tiny.RelPermalink }}{{.}} 500w {{ end }}
+  {{ end }}
+  {{ if ge $src.Width "800" }}
+    {{ with $small.RelPermalink }}, {{.}} 800w {{ end }}
+  {{ end }}
+  {{ if ge $src.Width "1200" }}
+    {{ with $medium.RelPermalink }}, {{.}} 1200w {{ end }}
+  {{ end }}
+  {{ if ge $src.Width "1500" }}
+    {{ with $large.RelPermalink }}, {{.}} 1500w {{ end }}
+  {{ end }}
+  {{ if ge $src.Width "3000" }}
+    {{ with $large.RelPermalink }}, {{.}} 3000w {{ end }}
+  {{ end }}'
+  src="{{ $medium.RelPermalink }}"
+  title="{{ with .Get "title" }}{{.}}{{ end }}"
+  alt="{{ with .Get "alt" }}{{.}}{{ end }}"
+>
+{{ with .Get "credits"}}
+  {{ $credits := split . "|" }}
+  <div style="position: relative;">
+    <a style="position:absolute;right:0;bottom:4px;background-color:rgba(0,0,0,.2);color:rgba(255,255,255,0.65);text-decoration:none;padding:2px;font-family:-apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif;font-size:10px;font-weight:bold;line-height:1;display:inline-block;border-radius:3px"
+      href="{{ index $credits 1 }}" target="_blank" rel="noopener noreferrer"
+      title="Download free do whatever you want high-resolution photos from {{ index $credits 0 }}"
+    >
+      <span style="display:inline-block;padding:2px">
+        <svg xmlns="http://www.w3.org/2000/svg"
+            style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:rgba(255,255,255,0.65)"
+            viewBox="0 0 32 32"
+        >
+          <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+        </svg>
+      </span>
+      <span style="display:inline-block;padding:2px">{{ index $credits 0 }}</span>
+    </a>
+  </div>
+{{ end }}
