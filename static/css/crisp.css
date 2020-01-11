@@ -127,8 +127,8 @@ ul, ol {
 	margin-left: 3em;
 }
 p code {
-	font-size: 1.05em;
 	line-height: 0.8em;
+	font-size: 0.8em;
 	background: #e4eee2; /* crispy#eeeeee */
 	font-weight: lighter;
 	padding: 0 0.2em;
@@ -136,7 +136,9 @@ p code {
 	border-radius: 0.2em;
 	border: 1px solid #d4ded1; /* crispy#dddddd */
 }
-pre {
+pre, code {
+	font-family: "Fira Code", monospace;
+	font-size: 0.85em;
 	overflow: auto;
 	word-wrap: normal;
 	white-space: pre;
