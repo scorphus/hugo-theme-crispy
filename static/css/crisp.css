@@ -5,7 +5,7 @@
 /* Basic Typography */
 html, body {
 	font-size: 1em;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: BlinkMacSystemFont, Helvetica, Roboto, sans-serif, Arial;
 	font-weight: 300;
 	color:#4f594d; /* crispy#555555 */
 	-webkit-font-smoothing: antialiased;
