@@ -72,7 +72,9 @@
   <body>
     <header id="header">
       {{ if .Site.Params.logo }}
-        <a id="logo" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" /></a>
+        <a id="logo" href="{{ .Site.BaseURL }}"{{ if not .IsNode }} class="hiddenLogo"{{ end }}>
+          <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" />
+        </a>
       {{ end }}
       <h1><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></h1>
 

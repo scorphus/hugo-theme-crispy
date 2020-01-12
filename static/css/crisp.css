@@ -339,6 +339,12 @@ footer a:hover {
 		font-size: 90% !important;
 	}
 }
+/* Smaller Screens */
+@media only screen and (max-width: 480px) {
+	.hiddenLogo {
+		display: none;
+	}
+}
 /* Tiny Screens */
 @media only screen and (max-width: 320px) {
 	header {
