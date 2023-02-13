@@ -1,12 +1,25 @@
 {{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
 
+{{ if (.Get "crop") }}
+  {{ .Scratch.Set "freakingGoTpl" ($src.Crop (.Get "crop")) }}
+{{ else }}
+  {{ .Scratch.Set "freakingGoTpl" $src }}
+{{ end }}
+{{ $src := .Scratch.Get "freakingGoTpl" }}
+
 {{ if (.Get "fill") }}
   {{ .Scratch.Set "freakingGoTpl" ($src.Fill (.Get "fill")) }}
 {{ else }}
   {{ .Scratch.Set "freakingGoTpl" $src }}
 {{ end }}
-
 {{ $src := .Scratch.Get "freakingGoTpl" }}
+
+{{ if (.Get "notUnsplash") }}
+  {{ .Scratch.Set "unsplash" false }}
+{{ else }}
+  {{ .Scratch.Set "unsplash" true }}
+{{ end }}
+{{ $unsplash := .Scratch.Get "unsplash" }}
 
 {{ $tinyWidth := default "500x" }}
 {{ $smallWidth := default "800x" }}
@@ -26,6 +39,7 @@
 {{ $large := .Scratch.Get "large" }}
 {{ $xlarge := .Scratch.Get "xlarge" }}
 
+{{ with .Get "link" }}<a href="{{.}}">{{ end }}
 <img
   {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}
     2sizes="(min-width: 35em) 1200px, 100vw"
@@ -50,6 +64,7 @@
   title="{{ with .Get "title" }}{{.}}{{ end }}"
   alt="{{ with .Get "alt" }}{{.}}{{ end }}"
 >
+{{ if (.Get "link") }}</a>{{ end }}
 {{ with .Get "credits"}}
   {{ $credits := split . "|" }}
   <div style="position: relative;">
@@ -57,14 +72,16 @@
       href="{{ index $credits 1 }}" target="_blank" rel="noopener noreferrer"
       title="Download free do whatever you want high-resolution photos from {{ index $credits 0 }}"
     >
-      <span style="display:inline-block;padding:2px">
-        <svg xmlns="http://www.w3.org/2000/svg"
-            style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:rgba(255,255,255,0.65)"
-            viewBox="0 0 32 32"
-        >
-          <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
-        </svg>
-      </span>
+      {{ if eq $unsplash true }}
+        <span style="display:inline-block;padding:2px">
+          <svg xmlns="http://www.w3.org/2000/svg"
+              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:rgba(255,255,255,0.65)"
+              viewBox="0 0 32 32"
+          >
+            <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+          </svg>
+        </span>
+      {{ end }}
       <span style="display:inline-block;padding:2px">{{ index $credits 0 }}</span>
     </a>
   </div>
