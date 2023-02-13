@@ -1,0 +1,1 @@
+@-webkit-keyframes sbfadein{0%{opacity:0}100%{opacity:1}}@-moz-keyframes sbfadein{0%{opacity:0}100%{opacity:1}}@-o-keyframes sbfadein{0%{opacity:0}100%{opacity:1}}@keyframes sbfadein{0%{opacity:0}100%{opacity:1}}#social-bar{opacity:1;-webkit-animation:sbfadein 1.359s linear;-moz-animation:sbfadein 1.359s linear;-o-animation:sbfadein 1.359s linear;animation:sbfadein 1.359s linear}
