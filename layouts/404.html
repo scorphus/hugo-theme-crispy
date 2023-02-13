@@ -1,0 +1,36 @@
+{{ partial "header.html" . }}
+<div id="main">
+  <div id="content">
+    <div>
+      <article role="article">
+        <div id="blog-archives" class="category">
+          <h1 class="entry-title">
+            {{ with .Site.Params.notFoundHeader }}
+              {{ . | markdownify }}
+            {{ else }}
+              Page not found 🤷🏻‍♂️
+            {{ end }}
+          </h1>
+          {{ with .Site.Params.notFoundText }}
+            {{ . | markdownify }}
+          {{ else }}
+            Please, <a href="/">click here</a> to go to the list of posts 🙂
+          {{ end }}
+          <br/><br/>
+          <img 2sizes="(min-width: 35em) 1200px, 100vw"
+              srcset='
+                https://picsum.photos/500/250 500w
+                ,
+                https://picsum.photos/800/400 800w
+                ,
+                https://picsum.photos/1200/600 1200w
+                ,
+                https://picsum.photos/1500/750 1500w
+              ' src="https://picsum.photos/1200/600" title="Unsplash.com" alt="Unsplash.com"
+          >
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+{{ partial "footer.html" . }}
